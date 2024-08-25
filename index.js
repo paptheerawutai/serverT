@@ -9,8 +9,7 @@ import routes from "./src/routes/MongoDB.js";
 const app = express();
 
 app.use(cors({ 
-  //ให้ใช้งานในมือถือได้
-    origin: "*",
+    origin: "*"
   }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
