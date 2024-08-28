@@ -13,7 +13,7 @@ const listAlarmMCSchema = new mongoose.Schema({
 });
 
 // สร้างโมเดล list_count_input โดยเชื่อมโยงกับ collection 'list_count_input'
-const list_count_input = mongoose.model('list_count_input', listAlarmMCSchema, 'list_count_input');
+const list_count_input = mongoose.model('list_count_input', list_count_inputMCSchema, 'list_count_input');
 
 // Route ที่ดึงข้อมูลจาก MongoDB
 router.get('/count_input', async (req, res) => {
